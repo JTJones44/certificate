@@ -3,64 +3,103 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-
-<title>Achievement Showcase</title>
+<title>LinkedIn Preview Test</title>
 
 <style>
 
-*{
-    margin:0;
-    padding:0;
-    box-sizing:border-box;
-}
-
 body{
-    font-family:'Segoe UI',sans-serif;
+    font-family:Segoe UI, Arial, sans-serif;
     background:#f4f6f8;
-    color:#333;
+    padding:40px;
 }
 
-.hero{
-    background:linear-gradient(135deg,#0A66C2,#004182);
-    color:white;
-    text-align:center;
-    padding:100px 20px;
-}
-
-.hero-badge{
-    font-size:70px;
-    margin-bottom:20px;
-}
-
-.hero h1{
-    font-size:62px;
-    margin-bottom:10px;
-}
-
-.hero h2{
-    font-size:34px;
-    margin-bottom:20px;
-    font-weight:400;
-}
-
-.recipient{
-    font-size:42px;
-    font-weight:700;
-    margin-top:20px;
-}
-
-.completion-date{
-    margin-top:15px;
-    font-size:20px;
-    opacity:0.9;
-}
-
-.share-button{
-
-    display:inline-block;
-    margin-top:40px;
+.preview-card{
+    max-width:700px;
+    margin:auto;
     background:white;
-    color:#0A66C2;
-    text-decoration:none;
-    font-weight:700;
-    padding:18px 40px
+    border:1px solid #d0d7de;
+    border-radius:12px;
+    overflow:hidden;
+    box-shadow:0 4px 12px rgba(0,0,0,0.08);
+}
+
+.preview-header{
+    background:#f7f7f7;
+    padding:15px;
+    border-bottom:1px solid #ddd;
+    font-weight:bold;
+}
+
+.preview-body{
+    padding:25px;
+    line-height:1.8;
+    white-space:pre-line;
+}
+
+.actions{
+    padding:20px;
+    text-align:center;
+    border-top:1px solid #eee;
+}
+
+button{
+    background:#0A66C2;
+    color:white;
+    border:none;
+    padding:14px 24px;
+    border-radius:6px;
+    font-size:16px;
+    cursor:pointer;
+}
+
+button:hover{
+    background:#004182;
+}
+
+</style>
+</head>
+<body>
+
+<div class="preview-card">
+
+    <div class="preview-header">
+        LinkedIn Post Preview
+    </div>
+
+    <div class="preview-body" id="linkedinText">
+🎉 I am delighted to have completed the Advanced Product Training Curriculum.
+
+This programme has strengthened my knowledge and provided valuable skills that I can apply in my role.
+
+Thank you to everyone involved in creating and delivering this learning opportunity.
+
+#Learning
+#ProfessionalDevelopment
+#ContinuousImprovement
+    </div>
+
+    <div class="actions">
+        <button onclick="copyText()">
+            Copy LinkedIn Text
+        </button>
+    </div>
+
+</div>
+
+<script>
+
+function copyText() {
+
+    const text =
+        document.getElementById("linkedinText").innerText;
+
+    navigator.clipboard.writeText(text);
+
+    alert("Post copied to clipboard");
+
+}
+
+</script>
+
+</body>
+</html>
