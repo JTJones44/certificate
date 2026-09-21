@@ -4,7 +4,7 @@
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-<title>Professional Achievement</title>
+<title>Achievement Showcase</title>
 
 <style>
 
@@ -15,7 +15,7 @@
 }
 
 body{
-    font-family:Segoe UI, Arial, sans-serif;
+    font-family:'Segoe UI',sans-serif;
     background:#f4f6f8;
     color:#333;
 }
@@ -24,236 +24,43 @@ body{
     background:linear-gradient(135deg,#0A66C2,#004182);
     color:white;
     text-align:center;
-    padding:80px 20px;
+    padding:100px 20px;
+}
+
+.hero-badge{
+    font-size:70px;
+    margin-bottom:20px;
 }
 
 .hero h1{
-    font-size:60px;
-    margin-bottom:20px;
+    font-size:62px;
+    margin-bottom:10px;
 }
 
 .hero h2{
-    font-size:36px;
-    margin-bottom:15px;
-}
-
-.hero p{
-    font-size:20px;
-    opacity:0.95;
-}
-
-.hero-buttons{
-    margin-top:40px;
-}
-
-.linkedin-btn{
-    display:inline-block;
-    background:white;
-    color:#0A66C2;
-    padding:18px 35px;
-    border-radius:8px;
-    text-decoration:none;
-    font-weight:bold;
-    font-size:18px;
-    transition:0.3s;
-}
-
-.linkedin-btn:hover{
-    background:#e8f1fc;
-    transform:translateY(-2px);
-}
-
-.container{
-    max-width:1000px;
-    margin:auto;
-    padding:50px 20px;
-}
-
-.card{
-    background:white;
-    border-radius:12px;
-    padding:30px;
-    margin-bottom:30px;
-    box-shadow:0 4px 15px rgba(0,0,0,0.08);
-}
-
-.certificate{
-    text-align:center;
-}
-
-.certificate img{
-    max-width:100%;
-    border-radius:10px;
-}
-
-.section-title{
-    text-align:center;
+    font-size:34px;
     margin-bottom:20px;
-    color:#0A66C2;
+    font-weight:400;
 }
 
-.skills{
-    display:grid;
-    grid-template-columns:repeat(auto-fit,minmax(220px,1fr));
-    gap:15px;
+.recipient{
+    font-size:42px;
+    font-weight:700;
+    margin-top:20px;
 }
 
-.skill{
-    background:#f7f9fc;
-    padding:15px;
-    border-radius:8px;
-}
-
-textarea{
-    width:100%;
-    height:180px;
-    padding:15px;
-    font-size:16px;
-    border:1px solid #ccc;
-    border-radius:8px;
-    resize:none;
-}
-
-.copy-btn{
+.completion-date{
     margin-top:15px;
-    background:#0A66C2;
-    color:white;
-    border:none;
-    padding:14px 25px;
-    border-radius:6px;
-    cursor:pointer;
-    font-size:16px;
+    font-size:20px;
+    opacity:0.9;
 }
 
-.copy-btn:hover{
-    background:#004182;
-}
+.share-button{
 
-.footer{
-    text-align:center;
-    padding:40px;
-    color:#777;
-}
-
-</style>
-</head>
-<body>
-
-<!-- HERO BANNER -->
-
-<section class="hero">
-
-    <h1>🏆 CERTIFIED</h1>
-
-    <h2>Advanced Product Training</h2>
-
-    <p>Awarded to</p>
-
-    <h2>JOE JONES</h2>
-
-    <p>Completed 21 September 2026</p>
-
-    <div class="hero-buttons">
-
-        <a class="linkedin-btn"
-           href="https://www.linkedin.com/feed/"
-           target="_blank">
-           Share on LinkedIn
-        </a>
-
-    </div>
-
-</section>
-
-<div class="container">
-
-    <!-- CERTIFICATE -->
-
-    <vement Certificate</h2>
-
-        <img src="certificate.jpg"
-             alt="Certificate">
-
-    </div>
-
-    <!-- ACHIEVEMENT -->
-
-    <div class="card">
-
-        <h2 class="      <p>
-        Joe has successfully completed the
-        Advanced Product Training curriculum,
-        demonstrating commitment to continuous
-        professional development and mastery
-        of key business processes.
-        </p>
-
-    </div>
-
-    <!-- SKILLS -->
-
-    <div class="card">
-
-        <h2 class="section-title">Skills Demonstrated</h2>
-
-        <div class="skills">
-
-            <div class="skill">✅ Product Knowledge</div>
-            <div class="skill">✅ Customer Service</div>
-            <div class="skill">✅ Risk Awareness</div>
-            <div class="skill">✅ Compliance Understanding</div>
-            <div class="skill">✅ System Administration</div>
-            <div class="skill">✅ Professional Development</div>
-
-        </div>
-
-    </div>
-
-    <!-- LINKEDIN PREVIEW -->
-
-    <div class="card">
-
-        <h2 class="section-title">LinkedIn Post Preview</h2>
-
-        <textarea id="linkedinText" readonly>I am delighted to have completed the Advanced Product Training curriculum.
-
-The programme provided valuable insights and practical knowledge that I can apply in my role.
-
-Thank you to everyone involved in creating and delivering this learning opportunity.
-
-#Learning
-#ProfessionalDevelopment
-#ContinuousImprovement</textarea>
-
-        <button class="copy-btn" onclick="copyText()">
-            Copy LinkedIn Text
-        </button>
-
-    </div>
-
-</div>
-
-<div class="footer">
-    Professional Achievement Showcase
-</div>
-
-<script>
-
-function copyText() {
-
-    const text =
-        document.getElementById("linkedinText");
-
-    text.select();
-    text.setSelectionRange(0,99999);
-
-    navigator.clipboard.writeText(text.value);
-
-    alert("LinkedIn post copied to clipboard.");
-
-}
-
-</script>
-
-</body>
-</html>
+    display:inline-block;
+    margin-top:40px;
+    background:white;
+    color:#0A66C2;
+    text-decoration:none;
+    font-weight:700;
+    padding:18px 40px
